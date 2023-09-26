@@ -1,0 +1,36 @@
+///--------------header strat-----------------///
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    .l-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vw 4vw;
+        transition: all 0.3s;
+
+        &__logo {
+            width: 5%;
+        }
+
+        &__nav {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 1rem;
+
+            &-list {
+                margin: 0 0 0 1.5rem;
+            }
+        }
+    }
+
+}
+
+///--------------header end-----------------///
