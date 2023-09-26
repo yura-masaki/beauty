@@ -740,13 +740,13 @@ footer .l-footer {
   width: 65%;
   font-size: 0.8vw;
   letter-spacing: 0.4rem;
-  line-height: 1.8rem;
+  line-height: 1.5vw;
   margin: 1.2rem 0 0 0;
 }
 .l-Tfacility__imglist {
   width: 100%;
   position: absolute;
-  margin: 5vw 0 0 0;
+  margin: 6vw 0 0 0;
   right: 0;
   top: 0;
   display: -webkit-box;
@@ -759,8 +759,8 @@ footer .l-footer {
           justify-content: flex-end;
 }
 .l-Tfacility__imglist-item {
-  width: 30%;
-  margin: 0 0 0 2rem;
+  width: 31%;
+  margin: 0 0 0 1rem;
 }
 
 .l-Taccess {
@@ -774,11 +774,13 @@ footer .l-footer {
 .l-Taccess::after {
   content: "";
   background-image: url(/src/img/flower-object.png);
+  width: 100px;
   background-size: 100%;
-  height: 110px;
+  height: 155px;
   position: absolute;
-  top: -110px;
+  top: -155px;
   left: 2%;
+  z-index: 99;
 }
 .l-Taccess__ttl {
   width: 100%;
@@ -810,7 +812,7 @@ footer .l-footer {
   margin: 3vw 0 0 10vw;
 }
 .l-Taccess__wrap__textgroup {
-  width: 30%;
+  width: 35%;
   height: 100%;
   font-size: 1vw;
   color: #fff;
@@ -822,7 +824,7 @@ footer .l-footer {
   display: flex;
 }
 .l-Taccess__wrap__textgroup__list:not(:first-child) {
-  margin: 3rem 0 0 0;
+  margin: 3vw 0 0 0;
 }
 .l-Taccess__wrap__textgroup__list-ttl {
   width: 30%;
@@ -831,10 +833,11 @@ footer .l-footer {
   width: 100%;
 }
 .l-Taccess__wrap__textgroup__list-text {
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
+  line-height: 2vw;
 }
 .l-Taccess__wrap-map {
-  width: 75%;
+  width: 60%;
 }
 .l-Taccess__wrap-map iframe {
   width: 70%;
@@ -881,7 +884,7 @@ footer .l-footer {
   margin: 1.2rem 0 0 0;
 }
 .l-Tbooking__wrap__box {
-  margin: 5rem auto;
+  margin: 2.5rem auto;
   position: relative;
   width: 35vw;
   height: 10vw;

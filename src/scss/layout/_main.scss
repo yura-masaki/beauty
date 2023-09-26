@@ -327,7 +327,7 @@
             width: 65%;
             font-size: .8vw;
             letter-spacing: .4rem;
-            line-height: 1.8rem;
+            line-height: 1.5vw;
             margin: 1.2rem 0 0 0;
         }
     }
@@ -335,15 +335,15 @@
     &__imglist {
         width: 100%;
         position: absolute;
-        margin: 5vw 0 0 0;
+        margin: 6vw 0 0 0;
         right: 0;
         top: 0;
         display: flex;
         justify-content: flex-end;
 
         &-item {
-            width: 30%;
-            margin: 0 0 0 2rem;
+            width: 31%;
+            margin: 0 0 0 1rem;
         }
     }
 }
@@ -367,11 +367,13 @@
     &::after {
         content: "";
         background-image: url(/src/img/flower-object.png);
+        width: 100px;
         background-size: 100%;
-        height: 110px;
+        height: 155px;
         position: absolute;
-        top: -110px;
+        top: -155px;
         left: 2%;
+        z-index: 99;
     }
 
     &__ttl {
@@ -400,7 +402,7 @@
         margin: 3vw 0 0 10vw;
 
         &__textgroup {
-            width: 30%;
+            width: 35%;
             height: 100%;
             font-size: 1vw;
             color: #fff;
@@ -409,7 +411,7 @@
                 display: flex;
 
                 &:not(:first-child) {
-                    margin: 3rem 0 0 0;
+                    margin: 3vw 0 0 0;
                 }
 
                 &-ttl {
@@ -421,7 +423,8 @@
                 }
 
                 &-text {
-                    letter-spacing: .3rem;
+                    letter-spacing: .2rem;
+                    line-height: 2vw;
                     // margin: 0 0 0 2vw;
                 }
             }
@@ -429,7 +432,7 @@
 
 
         &-map {
-            width: 75%;
+            width: 60%;
 
             iframe {
                 width: 70%;
@@ -501,7 +504,7 @@
         }
 
         &__box {
-            margin: 5rem auto;
+            margin: 2.5rem auto;
             position: relative;
             width: 35vw;
             height: 10vw;
