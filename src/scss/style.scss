@@ -1,7 +1,8 @@
 /* foundation */
+@use "foundation/reset";
 @use "foundation/base";
 @use "foundation/font";
-@use "foundation/reset";
+@use "foundation/mixin";
 
 /* layout */
 @use "layout/header";

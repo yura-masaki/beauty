@@ -6,6 +6,7 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    z-index: -999;
 
     &__wrap {
         position: absolute;
