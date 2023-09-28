@@ -576,7 +576,7 @@ header .l-header__nav-list {
   display: block;
   right: -100%;
   margin: 0;
-  padding: 15rem 0;
+  padding: 12rem 0;
   list-style: none;
   background-color: #2F9B9B;
   -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
@@ -1092,6 +1092,56 @@ footer .l-footer {
      object-fit: cover;
 }
 
+@media screen and (max-width: 800px) {
+  .l-hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: -999;
+  }
+  .l-hero__wrap {
+    width: 80%;
+    height: 60vh;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 99;
+  }
+  .l-hero__wrap-ttl {
+    position: absolute;
+    bottom: 10rem;
+    margin-top: 1rem;
+    font-size: 6.4vw;
+    letter-spacing: 8px;
+  }
+  .l-hero__wrap-text {
+    position: absolute;
+    bottom: 5rem;
+    width: 60vw;
+    font-size: 0.8rem;
+    letter-spacing: 1vmin;
+    line-height: 1.3rem;
+  }
+  .l-hero__wrap-logo {
+    position: absolute;
+  }
+  .l-hero__wrap-logo img {
+    display: none;
+  }
+  .l-hero-img {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    padding: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .l-hero-img img {
+    width: 80vw;
+    height: 75vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 /* object */
 .c-button {
   display: -webkit-box;
