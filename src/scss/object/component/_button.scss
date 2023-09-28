@@ -1,3 +1,6 @@
+@use "../../foundation/base" as *;
+@use "../../foundation/mixin" as *;
+
 .c-button {
     display: flex;
     justify-content: center;
@@ -8,7 +11,7 @@
 .c-Tblog-button {
     width: 100%;
     font-size: 1rem;
-    color: #2F9B9B;
+    color: $main-color;
     text-align: right;
     margin: 2.5rem 0 0;
     padding: 0 4vw;
@@ -25,15 +28,15 @@
         right: 2vw;
         width: 10px;
         height: 10px;
-        border-top: 1px solid #2F9B9B;
-        border-right: 1px solid #2F9B9B;
+        border-top: 1px solid $main-color;
+        border-right: 1px solid $main-color;
         transform: rotate(45deg);
     }
 }
 
 .c-Tabout-button {
     width: 100%;
-    color: #2F9B9B;
+    color: $main-color;
     font-size: 1rem;
     text-align: right;
     margin: 2rem 0 0;
@@ -51,11 +54,39 @@
         right: 2vw;
         width: 10px;
         height: 10px;
-        border-top: 1px solid #2F9B9B;
-        border-right: 1px solid #2F9B9B;
+        border-top: 1px solid $main-color;
+        border-right: 1px solid $main-color;
         transform: rotate(45deg);
     }
 }
+
+@include sp {
+    .c-Tabout-button {
+        width: 100%;
+        color: $main-color;
+        text-align: left;
+        font-size: 1rem;
+        margin: 2rem 0 .8rem 0;
+        position: relative;
+        letter-spacing: .1vw;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 2rem;
+            width: 10px;
+            height: 10px;
+            border-top: 1px solid $main-color;
+            border-right: 1px solid $main-color;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+
+
 
 .c-Tfacility-button {
     width: 100%;
