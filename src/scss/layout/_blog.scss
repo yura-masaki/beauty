@@ -1,0 +1,63 @@
+@use "../foundation/base" as *;
+@use "../foundation/mixin" as *;
+
+.l-blog {
+    width: 100%;
+    height: 100%;
+    padding: 8vw 0 0 10vw;
+
+    &__Plist {
+        width: 10%;
+        display: grid;
+        grid-template-columns: 35px 35px;
+        padding: 0 0 2rem 0;
+
+        &-item {
+            font-size: .8rem;
+            width: 100%;
+
+            &:nth-of-type(2n) {
+                border-bottom: 1px solid $main-color;
+            }
+        }
+    }
+
+    &__hero {
+        &-img {
+            width: 100%;
+            position: relative;
+
+            img {
+                height: 70vh;
+                object-fit: cover;
+            }
+
+            &::after {
+                content: "BLOG";
+                position: absolute;
+                bottom: -3vw;
+                left: -2vw;
+                font-size: 4vw;
+                color: $main-color;
+                writing-mode: vertical-rl;
+            }
+
+            &::before {
+                content: "";
+                width: 2px;
+                height: 3vw;
+                position: absolute;
+                bottom: -7vw;
+                left: 0;
+                border-radius: 5px;
+                background: $main-color;
+            }
+        }
+
+
+        &__textarea {
+            display: none;
+        }
+    }
+
+}
