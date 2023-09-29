@@ -1254,7 +1254,7 @@ footer .l-footer {
 }
 .l-Taccess__wrap__textgroup__list-text {
   letter-spacing: 0.2rem;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
 }
 .l-Taccess__wrap-map {
   width: 60%;
@@ -1617,20 +1617,6 @@ footer .l-footer {
 @media screen and (max-width: 800px) {
   .c-Tblog-button {
     font-size: 0.8rem;
-  }
-  .c-Tblog-button::after {
-    content: "";
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 2vw;
-    width: 10px;
-    height: 10px;
-    border-top: 1px solid #2F9B9B;
-    border-right: 1px solid #2F9B9B;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
   }
 }
 .c-Tabout-button {
