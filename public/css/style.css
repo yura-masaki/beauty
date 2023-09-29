@@ -631,23 +631,10 @@ footer .l-footer {
   right: 1vw;
   z-index: -2;
 }
-.l-Tblog__wrap {
-  overflow-x: scroll;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: 0 0 0 auto;
-  padding: 4vw 4vw 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.l-Tblog__wrap-ttl {
+.l-Tblog__ttl {
+  position: absolute;
+  top: 8vw;
+  left: 15vw;
   font-size: 2.4vw;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -659,18 +646,32 @@ footer .l-footer {
   border-radius: 5px;
   letter-spacing: 0.2rem;
 }
-.l-Tblog__wrap-ttl::after {
+.l-Tblog__ttl::after {
   content: "";
   width: 2px;
   height: 2vw;
   position: absolute;
-  right: 1.5vw;
-  top: 9vw;
+  left: 1.1vw;
+  top: 8.5vw;
   background: #2F9B9B;
   border-radius: 5px;
 }
+.l-Tblog__wrap {
+  position: relative;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  display: -webkit-box;
+  margin: 0 3rem;
+  width: 80%;
+  margin: 0 0 0 auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.l-Tblog__wrap::-webkit-scrollbar {
+  display: none;
+}
 .l-Tblog__wrap__list {
-  width: 20%;
+  width: 24%;
   padding: 0 0 0 2vw;
 }
 .l-Tblog__wrap__list-img {
@@ -691,34 +692,50 @@ footer .l-footer {
     height: 100%;
     position: relative;
   }
+  .l-Tblog__ttl {
+    position: absolute;
+    top: 15vw;
+    left: 15vw;
+    font-size: 4vw;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    margin: 0 5vw 0 0;
+    position: relative;
+    letter-spacing: 0.8%;
+    color: #2F9B9B;
+    border-radius: 5px;
+    letter-spacing: 0.2rem;
+  }
+  .l-Tblog__ttl::after {
+    width: 1px;
+    height: 4vw;
+    position: absolute;
+    left: 1.5vw;
+    top: 14.5vw;
+    border-radius: 5px;
+    background: #2F9B9B;
+  }
   .l-Tblog__wrap {
+    width: 70%;
     overflow-x: scroll;
-    padding: 4vw 4vw 0;
+    padding: 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
-  .l-Tblog__wrap-ttl::after {
-    content: "";
-    width: 3px;
-    height: 2vw;
-    position: absolute;
-    right: 1.5vw;
-    top: 8vw;
-    background: #2F9B9B;
-    border-radius: 5px;
-  }
   .l-Tblog__wrap__list {
+    width: 60%;
     padding: 0 0 0 2vw;
   }
   .l-Tblog__wrap__list-img {
     width: 100%;
   }
   .l-Tblog__wrap__list__date {
-    font-size: 0.8rem;
+    font-size: 2.4vw;
     margin-top: 0.8rem;
   }
   .l-Tblog__wrap__list__text {
-    font-size: 0.8rem;
+    font-size: 2.4vw;
     margin-top: 0.8rem;
   }
 }
@@ -772,7 +789,7 @@ footer .l-footer {
   width: 2px;
   height: 2vw;
   position: absolute;
-  right: 1.3vw;
+  right: 1.5vw;
   top: 11vw;
   border-radius: 5px;
   background: #2F9B9B;
@@ -829,7 +846,7 @@ footer .l-footer {
   }
   .l-Tabout__wrap-ttl::after {
     content: "";
-    width: 3px;
+    width: 1px;
     height: 2vw;
     position: absolute;
     right: 1.3vw;
@@ -1088,7 +1105,7 @@ footer .l-footer {
   width: 65%;
   font-size: 0.8vw;
   letter-spacing: 0.4rem;
-  line-height: 1.5vw;
+  line-height: 1.2rem;
   margin: 1.2rem 0 0 0;
 }
 .l-Tfacility__imglist {
@@ -1151,7 +1168,7 @@ footer .l-footer {
     width: 80%;
     font-size: 1.8vw;
     letter-spacing: 0.4rem;
-    line-height: 3vw;
+    line-height: 0.8rem;
     margin: 1.2rem 0 0 0;
   }
   .l-Tfacility__imglist {
@@ -1237,7 +1254,7 @@ footer .l-footer {
 }
 .l-Taccess__wrap__textgroup__list-text {
   letter-spacing: 0.2rem;
-  line-height: 2vw;
+  line-height: 1.2rem;
 }
 .l-Taccess__wrap-map {
   width: 60%;
@@ -1310,7 +1327,7 @@ footer .l-footer {
   }
   .l-Taccess__wrap__textgroup__list-text {
     letter-spacing: 0.2rem;
-    line-height: 3vw;
+    line-height: 0.8rem;
     border-bottom: 1px solid #fff;
     padding: 2vw 0;
   }
@@ -1597,6 +1614,25 @@ footer .l-footer {
           transform: rotate(45deg);
 }
 
+@media screen and (max-width: 800px) {
+  .c-Tblog-button {
+    font-size: 0.8rem;
+  }
+  .c-Tblog-button::after {
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 2vw;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #2F9B9B;
+    border-right: 1px solid #2F9B9B;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
 .c-Tabout-button {
   width: 100%;
   color: #2F9B9B;
@@ -1653,7 +1689,7 @@ footer .l-footer {
   color: #fff;
   position: relative;
   letter-spacing: 0.1vw;
-  margin-top: 7vw;
+  margin-top: 3vw;
 }
 .c-Tfacility-button::after {
   content: "";
@@ -1671,7 +1707,7 @@ footer .l-footer {
 @media screen and (max-width: 800px) {
   .c-Tfacility-button {
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #fff;
     position: relative;
     letter-spacing: 0.1vw;

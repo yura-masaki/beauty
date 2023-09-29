@@ -31,39 +31,47 @@
         z-index: -2;
     }
 
+    &__ttl {
+        position: absolute;
+        top: 8vw;
+        left: 15vw;
+        font-size: 2.4vw;
+        writing-mode: vertical-rl;
+        margin: 0 5vw 0 0;
+        position: relative;
+        letter-spacing: .8%;
+        color: #2F9B9B;
+        border-radius: 5px;
+        letter-spacing: .2rem;
+
+        &::after {
+            content: "";
+            width: 2px;
+            height: 2vw;
+            position: absolute;
+            left: 1.1vw;
+            top: 8.5vw;
+            background: #2F9B9B;
+            border-radius: 5px;
+        }
+    }
+
     &__wrap {
+        position: relative;
         overflow-x: scroll;
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
+        scrollbar-width: none;
+        display: -webkit-box;
+        margin: 0 3rem;
+        width: 80%;
         margin: 0 0 0 auto;
-        padding: 4vw 4vw 0;
         transition: all .3s;
 
-        &-ttl {
-            font-size: 2.4vw;
-            writing-mode: vertical-rl;
-            margin: 0 5vw 0 0;
-            position: relative;
-            letter-spacing: .8%;
-            color: #2F9B9B;
-            border-radius: 5px;
-            letter-spacing: .2rem;
-
-            &::after {
-                content: "";
-                width: 2px;
-                height: 2vw;
-                position: absolute;
-                right: 1.5vw;
-                top: 9vw;
-                background: #2F9B9B;
-                border-radius: 5px;
-            }
+        &::-webkit-scrollbar {
+            display: none;
         }
 
         &__list {
-            width: 20%;
+            width: 24%;
             padding: 0 0 0 2vw;
 
             &-img {
@@ -86,30 +94,46 @@
 // ---------------------------sp blog  end ---------------------------------
 
 @include sp {
+
     .l-Tblog {
         width: 100%;
         height: 100%;
         position: relative;
 
+
+        &__ttl {
+            position: absolute;
+            top: 15vw;
+            left: 15vw;
+            font-size: 4vw;
+            writing-mode: vertical-rl;
+            margin: 0 5vw 0 0;
+            position: relative;
+            letter-spacing: .8%;
+            color: #2F9B9B;
+            border-radius: 5px;
+            letter-spacing: .2rem;
+
+            &::after {
+                width: 1px;
+                height: 4vw;
+                position: absolute;
+                left: 1.5vw;
+                top: 14.5vw;
+                border-radius: 5px;
+                background: #2F9B9B;
+            }
+        }
+
         &__wrap {
+            width: 70%;
             overflow-x: scroll;
-            padding: 4vw 4vw 0;
+            padding: 0;
             transition: all .3s;
 
-            &-ttl {
-                &::after {
-                    content: "";
-                    width: 3px;
-                    height: 2vw;
-                    position: absolute;
-                    right: 1.5vw;
-                    top: 8vw;
-                    background: $main-color;
-                    border-radius: 5px;
-                }
-            }
 
             &__list {
+                width: 60%;
                 padding: 0 0 0 2vw;
 
                 &-img {
@@ -117,12 +141,12 @@
                 }
 
                 &__date {
-                    font-size: .8rem;
+                    font-size: 2.4vw;
                     margin-top: .8rem;
                 }
 
                 &__text {
-                    font-size: .8rem;
+                    font-size: 2.4vw;
                     margin-top: .8rem;
                 }
             }
@@ -193,7 +217,7 @@
                 width: 2px;
                 height: 2vw;
                 position: absolute;
-                right: 1.3vw;
+                right: 1.5vw;
                 top: 11vw;
                 border-radius: 5px;
                 background: #2F9B9B;
@@ -262,12 +286,11 @@
             display: block;
 
             &-ttl {
-
                 display: none;
 
                 &::after {
                     content: "";
-                    width: 3px;
+                    width: 1px;
                     height: 2vw;
                     position: absolute;
                     right: 1.3vw;
@@ -604,7 +627,7 @@
             width: 65%;
             font-size: .8vw;
             letter-spacing: .4rem;
-            line-height: 1.5vw;
+            line-height: 1.2rem;
             margin: 1.2rem 0 0 0;
         }
     }
@@ -678,7 +701,7 @@
                 width: 80%;
                 font-size: 1.8vw;
                 letter-spacing: .4rem;
-                line-height: 3vw;
+                line-height: .8rem;
                 margin: 1.2rem 0 0 0;
             }
         }
@@ -778,7 +801,7 @@
 
                 &-text {
                     letter-spacing: .2rem;
-                    line-height: 2vw;
+                    line-height: 1.2rem;
                     // margin: 0 0 0 2vw;
                 }
             }
@@ -874,7 +897,7 @@
 
                     &-text {
                         letter-spacing: .2rem;
-                        line-height: 3vw;
+                        line-height: .8rem;
                         border-bottom: 1px solid #fff;
                         padding: 2vw 0;
                         // margin: 0 0 0 2vw;
