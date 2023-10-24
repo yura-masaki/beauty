@@ -19,11 +19,7 @@ header {
         align-items: center;
         padding: 1vw 4vw;
         transition: all 0.3s;
-
-        @include pc {
-            display: none;
-        }
-
+        margin: 0;
         // @include tab {
         //     display: none;
         // }
@@ -57,8 +53,11 @@ header {
                 margin: 0 0 0 1.5rem;
             }
         }
-    }
 
+        @include sp {
+            display: none;
+        }
+    }
 }
 
 ///--------------pc header end-----------------///
@@ -67,7 +66,6 @@ header {
 
 ///--------------sp header start-----------------///
 .l-header__ham {
-
     &-logo {
         width: 20%;
         position: fixed;
@@ -79,10 +77,6 @@ header {
             width: 80px;
             height: 64px;
         }
-    }
-
-    @include tab {
-        display: none;
     }
 
     #menu__toggle {
@@ -177,7 +171,6 @@ header {
         background-color: #2F9B9B;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
         transition-duration: 0.5s;
-
         // &::after {
         //     content: "";
         //     background-image: url(/src/img/logo.png);
@@ -204,10 +197,11 @@ header {
 
         }
     }
+
+
+    @include pc {
+        display: none;
+    }
 }
-
-
-
-
 
 ///--------------sp header end-----------------///

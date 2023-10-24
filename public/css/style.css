@@ -442,11 +442,7 @@ header .l-header {
   padding: 1vw 4vw;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-}
-@media screen and (max-width: 1080px) {
-  header .l-header {
-    display: none;
-  }
+  margin: 0;
 }
 header .l-header a {
   width: 100%;
@@ -478,6 +474,11 @@ header .l-header__nav {
 header .l-header__nav-list {
   margin: 0 0 0 1.5rem;
 }
+@media (max-width: 800px) {
+  header .l-header {
+    display: none;
+  }
+}
 
 .l-header__ham-logo {
   width: 20%;
@@ -489,11 +490,6 @@ header .l-header__nav-list {
 .l-header__ham-logo img {
   width: 80px;
   height: 64px;
-}
-@media screen and (min-width: 1079px) {
-  .l-header__ham {
-    display: none;
-  }
 }
 .l-header__ham #menu__toggle {
   opacity: 0;
@@ -595,6 +591,11 @@ header .l-header__nav-list {
   color: #fff;
   font-size: 1.4rem;
 }
+@media (min-width: 801px) {
+  .l-header__ham {
+    display: none;
+  }
+}
 
 footer .l-footer {
   width: 100%;
@@ -686,7 +687,7 @@ footer .l-footer {
   margin-top: 0.8rem;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .l-Tblog {
     width: 100%;
     height: 100%;
@@ -808,7 +809,7 @@ footer .l-footer {
   margin: 2rem 0 0 0;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .l-Tabout {
     width: 100%;
     height: 100%;
@@ -971,7 +972,7 @@ footer .l-footer {
   left: 2rem;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .l-Tmenu-ttl {
     font-size: 7vw;
     padding: 0;
@@ -1128,7 +1129,7 @@ footer .l-footer {
   margin: 0 0 0 1rem;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .l-Tfacility {
     margin-top: 10rem;
     position: relative;
@@ -1264,7 +1265,7 @@ footer .l-footer {
   height: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .l-Taccess {
     width: 100%;
     height: 100%;
@@ -1406,7 +1407,7 @@ footer .l-footer {
   color: #2F9B9B;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .l-Tbooking {
     width: 100%;
     height: 100%;
@@ -1521,7 +1522,7 @@ footer .l-footer {
      object-fit: cover;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .l-hero {
     width: 100%;
     height: 100vh;
@@ -1619,6 +1620,35 @@ footer .l-footer {
   border-radius: 5px;
   background: #2F9B9B;
 }
+.l-blog__hero__wrap {
+  position: relative;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  display: -webkit-box;
+  margin: 0 3rem;
+  width: 80%;
+  margin: 0 0 0 auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.l-blog__hero__wrap::-webkit-scrollbar {
+  display: none;
+}
+.l-blog__hero__wrap__list {
+  width: 24%;
+  padding: 0 0 0 2vw;
+}
+.l-blog__hero__wrap__list-img {
+  width: 100%;
+}
+.l-blog__hero__wrap__list__date {
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+}
+.l-blog__hero__wrap__list__text {
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+}
 .l-blog__hero__textarea {
   display: none;
 }
@@ -1666,7 +1696,7 @@ footer .l-footer {
           transform: rotate(45deg);
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .c-Tblog-button {
     font-size: 0.8rem;
   }
@@ -1697,7 +1727,7 @@ footer .l-footer {
           transform: rotate(45deg);
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .c-Tabout-button {
     width: 100%;
     color: #2F9B9B;
@@ -1742,7 +1772,7 @@ footer .l-footer {
           transform: rotate(45deg);
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .c-Tfacility-button {
     width: 100%;
     font-size: 0.8rem;
