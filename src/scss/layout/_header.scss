@@ -171,7 +171,6 @@ header {
         background-color: #2F9B9B;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
         transition-duration: 0.5s;
-
         // &::after {
         //     content: "";
         //     background-image: url(/src/img/logo.png);
@@ -198,6 +197,7 @@ header {
 
         }
     }
+
 
     @include pc {
         display: none;
