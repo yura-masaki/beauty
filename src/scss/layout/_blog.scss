@@ -54,6 +54,40 @@
             }
         }
 
+        &__wrap {
+            position: relative;
+            overflow-x: scroll;
+            scrollbar-width: none;
+            display: -webkit-box;
+            margin: 0 3rem;
+            width: 80%;
+            margin: 0 0 0 auto;
+            transition: all .3s;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            &__list {
+                width: 24%;
+                padding: 0 0 0 2vw;
+
+                &-img {
+                    width: 100%;
+                }
+
+                &__date {
+                    font-size: .8rem;
+                    margin-top: .8rem;
+                }
+
+                &__text {
+                    font-size: .8rem;
+                    margin-top: .8rem;
+                }
+            }
+        }
+
 
         &__textarea {
             display: none;

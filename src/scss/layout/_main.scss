@@ -656,393 +656,313 @@
 
 // ---------------------------pc facility end -------------------------------------
 
-
 @include sp {
+
     .l-Tfacility {
         margin-top: 10rem;
         position: relative;
 
-        &__ttl {
-            font-size: 7vw;
-            padding: 0;
-            text-align: center;
-            color: $main-color;
-        }
 
-        &__wrap {
-            width: 100%;
-        }
+            &__ttl {
+                font-size: 7vw;
+                padding: 0;
+                text-align: center;
+                color: $main-color;
+            }
 
-        &__textwrap {
-            width: 100%;
-            color: white;
-            font-size: 2.4rem;
-            padding: 20vw 0 15vw 12vw;
-            margin-top: 65vw;
-            position: relative;
-
-            &::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                background: $main-color;
+            &__wrap {
                 width: 100%;
-                height: 100%;
-                z-index: -1;
             }
 
-            &-ttl {
-                letter-spacing: .4rem;
-                font-size: 5.5vw;
-            }
+            &__textwrap {
+                width: 100%;
+                color: white;
+                font-size: 2.4rem;
+                padding: 20vw 0 15vw 12vw;
+                margin-top: 65vw;
+                position: relative;
 
-            &-text {
-                width: 80%;
-                font-size: 1.8vw;
-                letter-spacing: .4rem;
-                line-height: .8rem;
-                margin: 1.2rem 0 0 0;
-            }
-        }
-
-        &__imglist {
-            width: 100%;
-            display: block;
-
-            &-item {
-                width: 80%;
-                margin: 3rem auto 0 auto;
-            }
-        }
-    }
-
-    .none {
-        display: none;
-    }
-}
-
-
-
-
-// --------------------------- facility end -----------------------------------
-
-
-
-
-// --------------------------- access strat -----------------------------------
-
-
-.l-Taccess {
-    width: 100%;
-    height: 100%;
-    background: $main-color;
-    margin-top: 15rem;
-    padding: 0 0 5vw 0;
-    position: relative;
-
-    &::after {
-        content: "";
-        background-image: url(/src/img/flower-object.png);
-        width: 100px;
-        background-size: 100%;
-        height: 155px;
-        position: absolute;
-        top: -155px;
-        left: 2%;
-        z-index: 99;
-    }
-
-    &__ttl {
-        width: 100%;
-        font-size: 2.4vw;
-        padding: 5vw 0 0 10vw;
-        position: relative;
-        color: #fff;
-        letter-spacing: .4rem;
-
-        &::after {
-            content: "";
-            width: 4vw;
-            height: 2px;
-            position: absolute;
-            left: 5vw;
-            top: 6.5vw;
-            background: #fff;
-            border-radius: 5px;
-        }
-    }
-
-    &__wrap {
-        display: flex;
-        justify-content: space-between;
-        margin: 3vw 0 0 10vw;
-
-        &__textgroup {
-            width: 35%;
-            height: 100%;
-            font-size: 1vw;
-            color: #fff;
-
-            &__list {
-                display: flex;
-
-                &:not(:first-child) {
-                    margin: 3vw 0 0 0;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: $main-color;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
                 }
 
                 &-ttl {
-                    width: 30%;
-                }
-
-                &-impo {
-                    width: 100%;
+                    letter-spacing: .4rem;
+                    font-size: 5.5vw;
                 }
 
                 &-text {
-                    letter-spacing: .2rem;
-                    line-height: 1.5rem;
-                    // margin: 0 0 0 2vw;
+                    width: 80%;
+                    font-size: 1.8vw;
+                    letter-spacing: .4rem;
+                    line-height: .8rem;
+                    margin: 1.2rem 0 0 0;
                 }
             }
+
+            &__imglist {
+                width: 100%;
+                display: block;
+
+                &-item {
+                    width: 80%;
+                    margin: 3rem auto 0 auto;
+                }
+            }
+            
         }
 
-
-        &-map {
-            width: 60%;
-
-            iframe {
-                width: 70%;
-                height: 100%;
-            }
+        .none {
+            display: none;
         }
     }
 
-}
-
-// --------------------------- access end -----------------------------------------
 
 
 
+    // --------------------------- facility end -----------------------------------
 
-// ---------------------------sp access strat -------------------------------------
 
 
-@include sp {
+
+    // --------------------------- access strat -----------------------------------
+
+
     .l-Taccess {
         width: 100%;
         height: 100%;
         background: $main-color;
         margin-top: 15rem;
-        padding: 0 0 7vw 0;
+        padding: 0 0 5vw 0;
         position: relative;
 
         &::after {
             content: "";
             background-image: url(/src/img/flower-object.png);
-            width: 50px;
-            background-repeat: no-repeat;
+            width: 100px;
             background-size: 100%;
             height: 155px;
             position: absolute;
-            top: -78px;
+            top: -155px;
             left: 2%;
             z-index: 99;
         }
 
         &__ttl {
             width: 100%;
-            font-size: 7vw;
-            padding: 0;
+            font-size: 2.4vw;
+            padding: 5vw 0 0 10vw;
             position: relative;
-            top: -20vw;
-            text-align: center;
-            color: $main-color;
+            color: #fff;
             letter-spacing: .4rem;
 
             &::after {
                 content: "";
-                display: none;
+                width: 4vw;
+                height: 2px;
+                position: absolute;
+                left: 5vw;
+                top: 6.5vw;
+                background: #fff;
+                border-radius: 5px;
             }
         }
 
         &__wrap {
-            display: block;
-            margin: 0 0 0 0;
+            display: flex;
+            justify-content: space-between;
+            margin: 3vw 0 0 10vw;
 
             &__textgroup {
-                width: 80%;
+                width: 35%;
                 height: 100%;
-                margin: 0 auto 2rem auto;
                 font-size: 1vw;
                 color: #fff;
 
                 &__list {
-                    display: block;
+                    display: flex;
 
                     &:not(:first-child) {
                         margin: 3vw 0 0 0;
                     }
 
                     &-ttl {
-                        width: 100%;
-                        letter-spacing: .1rem;
-                        font-size: 3.5vw;
+                        width: 30%;
                     }
 
                     &-impo {
                         width: 100%;
-                        text-align: right;
                     }
 
                     &-text {
                         letter-spacing: .2rem;
-                        line-height: .8rem;
-                        border-bottom: 1px solid #fff;
-                        padding: 2vw 0;
+                        line-height: 1.5rem;
                         // margin: 0 0 0 2vw;
                     }
                 }
             }
 
+
             &-map {
-                width: 80%;
-                margin: 0 auto;
+                width: 60%;
 
                 iframe {
-                    width: 100%;
-                    height: 30vh;
+                    width: 70%;
+                    height: 100%;
                 }
             }
         }
 
     }
 
-}
-
-// ---------------------------sp access end -------------------------------------
+    // --------------------------- access end -----------------------------------------
 
 
 
-// --------------------------- booking end -------------------------------------
 
-.l-Tbooking {
-    width: 100%;
-    height: 100%;
-    margin: 8vw 0;
+    // ---------------------------sp access strat -------------------------------------
 
-    &__ttl {
-        font-size: 2.4vw;
-        text-align: center;
-        color: $main-color;
-        letter-spacing: .8rem;
-        position: relative;
 
-        p {
-            font-size: 1.6vw;
-            margin-top: .8vw;
-            letter-spacing: .4rem;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: 8vw;
-            left: 50%;
-            transform: translate(-50%, 50%);
-            width: 1px;
-            height: 5vw;
+    @include sp {
+        .l-Taccess {
+            width: 100%;
+            height: 100%;
             background: $main-color;
-        }
-    }
-
-    &__wrap {
-        margin: 15vw 0 0 0;
-
-        &__text {
-            font-size: 1vw;
-            text-align: center;
-            color: $main-color;
-
-            &:not(:first-child) {
-                margin: .6rem 0 0 0;
-            }
-        }
-
-        &__box {
-            margin: 2.5rem auto;
+            margin-top: 15rem;
+            padding: 0 0 7vw 0;
             position: relative;
-            width: 35vw;
-            height: 10vw;
 
             &::after {
                 content: "";
+                background-image: url(/src/img/flower-object.png);
+                width: 50px;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                height: 155px;
                 position: absolute;
-                top: 0;
-                left: 0;
-                width: 35vw;
-                height: 10vw;
-                background: #2f9b9b1b;
-                z-index: -1;
+                top: -78px;
+                left: 2%;
+                z-index: 99;
             }
 
-
-            &-img {
-                margin: 0 auto;
-                width: 20%;
-            }
-
-            &-text {
-                font-size: 1.2vw;
+            &__ttl {
+                width: 100%;
+                font-size: 7vw;
+                padding: 0;
+                position: relative;
+                top: -20vw;
                 text-align: center;
-                letter-spacing: .3rem;
                 color: $main-color;
+                letter-spacing: .4rem;
+
+                &::after {
+                    content: "";
+                    display: none;
+                }
             }
+
+            &__wrap {
+                display: block;
+                margin: 0 0 0 0;
+
+                &__textgroup {
+                    width: 80%;
+                    height: 100%;
+                    margin: 0 auto 2rem auto;
+                    font-size: 1vw;
+                    color: #fff;
+
+                    &__list {
+                        display: block;
+
+                        &:not(:first-child) {
+                            margin: 3vw 0 0 0;
+                        }
+
+                        &-ttl {
+                            width: 100%;
+                            letter-spacing: .1rem;
+                            font-size: 3.5vw;
+                        }
+
+                        &-impo {
+                            width: 100%;
+                            text-align: right;
+                        }
+
+                        &-text {
+                            letter-spacing: .2rem;
+                            line-height: .8rem;
+                            border-bottom: 1px solid #fff;
+                            padding: 2vw 0;
+                            // margin: 0 0 0 2vw;
+                        }
+                    }
+                }
+
+                &-map {
+                    width: 80%;
+                    margin: 0 auto;
+
+                    iframe {
+                        width: 100%;
+                        height: 30vh;
+                    }
+                }
+            }
+
         }
+
     }
-}
+
+    // ---------------------------sp access end -------------------------------------
 
 
-// --------------------------- booking end -------------------------------------
 
+    // --------------------------- booking end -------------------------------------
 
-// ---------------------------sp booking strat ---------------------------------
-
-@include sp {
     .l-Tbooking {
         width: 100%;
         height: 100%;
-        margin: 20vw 0;
+        margin: 8vw 0;
 
         &__ttl {
-            font-size: 7vw;
+            font-size: 2.4vw;
             text-align: center;
-            letter-spacing: .2rem;
             color: $main-color;
+            letter-spacing: .8rem;
             position: relative;
 
             p {
-                font-size: 2.4vw;
-                margin-top: 2.4vw;
+                font-size: 1.6vw;
+                margin-top: .8vw;
+                letter-spacing: .4rem;
             }
 
             &::after {
                 content: "";
                 position: absolute;
-                top: 15vw;
+                top: 8vw;
                 left: 50%;
                 transform: translate(-50%, 50%);
                 width: 1px;
-                height: 10vw;
+                height: 5vw;
                 background: $main-color;
             }
         }
 
         &__wrap {
-            margin: 25vw 0 0 0;
+            margin: 15vw 0 0 0;
 
             &__text {
-                font-size: .8vw;
+                font-size: 1vw;
                 text-align: center;
                 color: $main-color;
 
@@ -1054,16 +974,16 @@
             &__box {
                 margin: 2.5rem auto;
                 position: relative;
-                width: 60vw;
-                height: 10vh;
+                width: 35vw;
+                height: 10vw;
 
                 &::after {
                     content: "";
                     position: absolute;
                     top: 0;
                     left: 0;
-                    width: 60vw;
-                    height: 10vh;
+                    width: 35vw;
+                    height: 10vw;
                     background: #2f9b9b1b;
                     z-index: -1;
                 }
@@ -1084,6 +1004,88 @@
         }
     }
 
-}
 
-// ---------------------------sp booking end -------------------------------------
+    // --------------------------- booking end -------------------------------------
+
+
+    // ---------------------------sp booking strat ---------------------------------
+
+    @include sp {
+        .l-Tbooking {
+            width: 100%;
+            height: 100%;
+            margin: 20vw 0;
+
+            &__ttl {
+                font-size: 7vw;
+                text-align: center;
+                letter-spacing: .2rem;
+                color: $main-color;
+                position: relative;
+
+                p {
+                    font-size: 2.4vw;
+                    margin-top: 2.4vw;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 15vw;
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+                    width: 1px;
+                    height: 10vw;
+                    background: $main-color;
+                }
+            }
+
+            &__wrap {
+                margin: 25vw 0 0 0;
+
+                &__text {
+                    font-size: .8vw;
+                    text-align: center;
+                    color: $main-color;
+
+                    &:not(:first-child) {
+                        margin: .6rem 0 0 0;
+                    }
+                }
+
+                &__box {
+                    margin: 2.5rem auto;
+                    position: relative;
+                    width: 60vw;
+                    height: 10vh;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 60vw;
+                        height: 10vh;
+                        background: #2f9b9b1b;
+                        z-index: -1;
+                    }
+
+
+                    &-img {
+                        margin: 0 auto;
+                        width: 20%;
+                    }
+
+                    &-text {
+                        font-size: 1.2vw;
+                        text-align: center;
+                        letter-spacing: .3rem;
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+
+    }
+
+    // ---------------------------sp booking end -------------------------------------
